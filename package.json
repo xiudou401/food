@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -o ./public/styles.css"
+    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "tailwindcss": "^4.1.12"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
